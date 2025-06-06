@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*
+Base style
+*/
+body {
+  font-size: 15px; line-height: 1.5; color: #333;
+}
+label, input, textarea, select, button {
+  cursor: pointer;
+}
+button {
+  border: 0;
+}
+
+/*
+grid
+*/
+.grid {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item {
+  list-style-type: none;
+}
+.grid-col-2 > .grid-item {
+  width: 50%;
+}
+.grid-col-3 > .grid-item {
+  width: 33.3%;
+}
+.grid-col-4 > .grid-item {
+  width: 25%;
+}
+
+/*
+Section
+*/
+.section {
+  padding: 30px 15px;
+}
+.section.section-secondary{
+  background: hsl(0, 0%, 94%);
+}
+
+/*
+card
+*/
+.card {
+  padding: 0 10px;
+}
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+/*
+button
+*/
+.button {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  background-color: #333;
+  text-align: center;
+  padding: 15px 60px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 #bbb;
+  transition: box-shadow .25s;
+}
+.button:hover {
+  box-shadow: 0 0 0 #bbb;
+}
+.button.button-submission {
+  background: #92d3ca;
+}
+
+/*
+.input
+*/
+.input{
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 500px;
+}
+
+/*
+form
+*/
+/* .form {} */
+.form-table {
+  margin: 0 auto;
+}
+/* .form-table tr {} */
+.form-table th {
+  padding: 10px;
+  text-align: left;
+}
+.form-table td {
+  padding: 10px;
+}
+.form-button {
+  margin-top: 20px;
+  text-align: center;
+}

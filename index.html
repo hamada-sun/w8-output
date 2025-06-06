@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w8-output</title>
+
+    <meta name="description" content="sample text …">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+  <!-- display:flexを用いたグリッドレイアウト -->
+  <!-- 横4 × 縦4,横2 × 縦2,横6 × 縦1 -->
+
+    <div class="section">
+      <ul class="grid grid-col-3">
+        <li class="grid-item">
+          <div class="card">
+              <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thmbnail">
+          </div>
+        </li>
+        <li class="grid-item">
+          <div class="card">
+              <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thmbnail">
+          </div>
+        </li>
+
+        <li class="grid-item">
+          <div class="card">
+              <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thmbnail">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+
+  <!-- ログインフォーム -->
+  <!-- email, passwordの入力欄がある.ボタンがある
+        ボタンの下にSign upページへのリンクがある -->
+    <div class="section section-secondary">
+      <form class="form" action="#">
+        <table class="form-table">
+          <tr>
+            <th>
+              <label for="name">
+                Your email
+              </label>
+            </th>
+            <td>
+              <input class="input" type="text" id="name">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="email">
+                Password
+              </label>
+            </th>
+            <td>
+              <input class="input" type="email" id="email">
+            </td>
+          </tr>
+        </table>
+
+        <div class="form-button">
+          <button class="button button-submission" type="submit">Sign in</button>
+        </div>
+
+        <p>
+        Don't have an account yet? <a href="#">Sign up</a>
+        </p>
+      </form>
+    </div>
+
+
+    <!-- 2/4 HTML/CSSのログインフォームを拡張し、一度Sign Inのボタンが押されたら次回以降、emailとpasswordが自動入力される機能をlocalStorageを用いて実装してください。  -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
