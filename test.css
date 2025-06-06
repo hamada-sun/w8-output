@@ -3,11 +3,41 @@
 /*
 Base style
 */
-body, h1 {
+body{
   font-size: 15px; line-height: 1.5; color: #333;
 }
-div {
-    width: 200px;
-    border-radius: 20px;
-    background-color: greenyellow;
+
+.container_00 {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.container_01 {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.container_02 {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.text_box {
+  border: solid;
+  border-width: .5px;
+  border-color: blueviolet;
+  border-radius: 15px;
+  width: 20%;
+  height: 60px;
+  line-height:60px;
+  text-align: center;
+  padding: auto;
+  margin: .5px;
+  background-color: greenyellow;
 }
