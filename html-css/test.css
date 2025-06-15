@@ -27,7 +27,6 @@ body{
   align-content: center;
 }
 
-
 .text_box {
   border: solid;
   border-width: .5px;
@@ -40,4 +39,17 @@ body{
   padding: auto;
   margin: .5px;
   background-color: greenyellow;
+}
+
+/*
+Section
+*/
+.section00 {
+  background-color: aquamarine;
+}
+.section01 {
+  background-color: orange;
+}
+.section02 {
+  background-color: pink;
 }
