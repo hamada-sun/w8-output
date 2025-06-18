@@ -55,6 +55,7 @@ card
 .card-image {
   width: 100%;
   height: auto;
+  background-color: aqua;
 }
 
 /*
