@@ -1,3 +1,45 @@
+(() => {
+
+
+
+
+})()
+
+// (() => {
+/*
+
+<article id="content1">
+  <h1>JavaScriptレシピ</h1>
+  <form method="post" action="#">
+    <label for="text_contact">お問い合わせ内容：</label>
+    <textarea id="text_contact" name="text_contact"></textarea>
+  </form>
+</article>
+
+ */
+
+//   window.addEventListener('DOMContentLoaded', function(){
+
+//     // テキストエリアのHTML要素を取得
+//     let textarea_contact = document.getElementById("text_contact");
+
+//     // イベント「change」を登録
+//     textarea_contact.addEventListener("change",function(){
+//       console.log("Change action");
+//       console.log(this.value);
+//     });
+
+//     // イベント「input」を登録
+//     textarea_contact.addEventListener("input",function(){
+//       console.log("Input action");
+//       console.log(this.value);
+//     });
+//   });
+
+// // 参考
+// // https://gray-code.com/javascript/execute-processing-when-the-form-entered/
+// })();
+
 // const cookie = document.cookie; //すべてのCookieを読み込む
 // console.log(cookie); // key=value; key=value; key=value; key=value; key=value; key=value;
 //複数のCookieが設定されている場合それぞれの情報が;で区切られています。
@@ -70,21 +112,21 @@
 
 
 
-//LocalStorageの使い方
-//ブラウザの対応チェック
-if(('localStorage' in window) && (window.localStorage !== null)) {
-    // ローカルストレージが使える
-} else {
-    // 使えない。。。
-}
+// //LocalStorageの使い方
+// //ブラウザの対応チェック
+// if(('localStorage' in window) && (window.localStorage !== null)) {
+//     // ローカルストレージが使える
+// } else {
+//     // 使えない。。。
+// }
 
 
-//LocalStorageへデータを保存する
-var num = 1;
-// データの保存
-localStorage.setItem('access_count', num);
-window.localStorage.setItem('access_count', num);
-localStorage.access_count = num
+// //LocalStorageへデータを保存する
+// var num = 1;
+// // データの保存
+// localStorage.setItem('access_count', num);
+// window.localStorage.setItem('access_count', num);
+// localStorage.access_count = num
 
 
 //LocalStorageからデータを取得する
@@ -92,7 +134,7 @@ localStorage.access_count = num
 // num = localStorage.getItem('access_count');
 // num = window.localStorage.getItem('access_count');
 // num = localStorage.access_count
-console.log(num);
+// console.log(num);
 
 
 //LocalStorageからデータを削除する
