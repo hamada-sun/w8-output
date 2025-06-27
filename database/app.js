@@ -1,149 +1,34 @@
+
+
 (() => {
 
+  const initialEmail = localStorage.getItem('E-mail');
+  const initialPassword = localStorage.getItem('Password');
+
+  let email = document.getElementById('email');
+  let pass = document.getElementById('pass');
+
+  email.value = initialEmail;
+  pass.value = initialPassword;
+
+  function buttonClick(){
+    // msg.innerText = '登録アドレスは' + email.value + 'パスワードは' + pass.value +'ですね';
+    // console.log(email.value, pass.value);
+
+    if(('localStorage' in window) && (window.localStorage !== null)){
+      localStorage.setItem('E-mail', email.value);
+      localStorage.setItem('Password', pass.value);
+
+    } else {
+      return;
+    }
+  }
+
+  // let msg = document.getElementById('Page_msg');
+
+  let signInButton = document.getElementById('signIn');
+  signInButton.addEventListener('click', buttonClick);
 
 
+})();
 
-})()
-
-// (() => {
-/*
-
-<article id="content1">
-  <h1>JavaScriptレシピ</h1>
-  <form method="post" action="#">
-    <label for="text_contact">お問い合わせ内容：</label>
-    <textarea id="text_contact" name="text_contact"></textarea>
-  </form>
-</article>
-
- */
-
-//   window.addEventListener('DOMContentLoaded', function(){
-
-//     // テキストエリアのHTML要素を取得
-//     let textarea_contact = document.getElementById("text_contact");
-
-//     // イベント「change」を登録
-//     textarea_contact.addEventListener("change",function(){
-//       console.log("Change action");
-//       console.log(this.value);
-//     });
-
-//     // イベント「input」を登録
-//     textarea_contact.addEventListener("input",function(){
-//       console.log("Input action");
-//       console.log(this.value);
-//     });
-//   });
-
-// // 参考
-// // https://gray-code.com/javascript/execute-processing-when-the-form-entered/
-// })();
-
-// const cookie = document.cookie; //すべてのCookieを読み込む
-// console.log(cookie); // key=value; key=value; key=value; key=value; key=value; key=value;
-//複数のCookieが設定されている場合それぞれの情報が;で区切られています。
-
-
-
-//Cookie毎に分割して値を取得する
-// const cookies = document.cookie;
-// const array = cookies.split(';');
-
-// array.forEach(function(value) {
-//   const content = value.split('=');
-//   console.log(content[1]); // valueを取得
-// })
-// /*
-// value
-// value
-// value
-// .....
-// */
-
-//Cookieの書き込み
-// document.cookie = "user=Tarou"; // key=value
-// console.log(document.cookie); // user=Tarou
-
-//Cookieの有効期限を設定
-// // max-age 1時間後に消える
-// document.cookie = "user=Tarou; max-age=3600";
-
-// // expires　2021/11/30（月） 20:00に消える
-// document.cookie = "user=Tarou; expires=Mon, 30 Nov 2021 20:00:00 GMT";
-
-
-//Cookieの削除
-// // 有効期限を過去に設定
-// document.cookie = "user=Tarou; expires=Mon, 1 Nov 2021 20:00:00 GMT";
-// // 有効期限を0に設定
-// document.cookie = "user=Tarou; max-age=0";
-
-
-
-//npmパッケージのjs-cookieを導入することでより気軽に
-//document.cookieでもかんたんな操作はできますが、Cookieの細かい設定を行いたい場合は、js-cookieを使うと非常に便利
-
-//js-cookieのインストール
-// // $ npm i js-cookie
-// // $ yarn add js-cookie
-
-// import Cookies from 'js-cookie';
-
-//Cookieの読み込み
-// Cookies.get('key'); // 'value'
-// Cookies.get(); // {key: 'value'}
-
-//Cookieの書き込み
-// Cookies.set('key', 'value');
-// // 14日後に消える
-// Cookies.set('key', 'value', {expires: 14}); 
-// // ユーザーの使用言語を日本語に指定
-// Cookies.set('locale', 'ja-JP'); 
-
-
-//Cookieの削除
-// Cookies.remove('key');
-
-
-//https(SSL/TLS)通信時のみにCookieを送信
-// Cookies.set('key', 'value', { secure: true });
-
-
-
-
-// //LocalStorageの使い方
-// //ブラウザの対応チェック
-// if(('localStorage' in window) && (window.localStorage !== null)) {
-//     // ローカルストレージが使える
-// } else {
-//     // 使えない。。。
-// }
-
-
-// //LocalStorageへデータを保存する
-// var num = 1;
-// // データの保存
-// localStorage.setItem('access_count', num);
-// window.localStorage.setItem('access_count', num);
-// localStorage.access_count = num
-
-
-//LocalStorageからデータを取得する
-// // データの取得
-// num = localStorage.getItem('access_count');
-// num = window.localStorage.getItem('access_count');
-// num = localStorage.access_count
-// console.log(num);
-
-
-//LocalStorageからデータを削除する
-// // データの削除
-// localStorage.removeItem('access_count');
-// window.localStorage.removeItem('access_count');
-
-
-//LocalStorageの初期化
-// // localStorageを初期化
-// localStorage.clear();
-// window.localStorage.clear();
