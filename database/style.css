@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /*
 Base style
 */
@@ -7,14 +6,13 @@ Base style
     box-sizing: border-box;
 }
 body {
-    color: rgb(255,230,255);
+    color: rgb(230,230,230);
     background-color: rgb(10,15,25);
 }
-
 /*
 SignInForm
 */
-.signIn {
+.SignIn {
     line-height: 2.5em;
     background-color:	rgb(30,40,60);
     height: 500px;
@@ -39,7 +37,7 @@ SignInForm
     margin-bottom: 20px;
 }
 .TextForm {
-    background-color: #384053;
+    background-color: rgb(55, 65, 80);
     border: none;
     border-radius: 8px;
     width: 400px;
@@ -47,20 +45,18 @@ SignInForm
     cursor: text;
 }
 .TextForm:focus {
-    background-color: whitesmoke;
+    background-color: rgb(230,230,230);
 }
-
 .signInButton {
     font-size: 20px;
-    color: rgb(255,230,255);
+    color: rgb(230,230,230);
     border: solid 0;
-    background-color: #1C65F2;
+    background-color: rgb(30, 100, 240);
     border-radius: 8px;
     width: 400px;
     height: 40px;
     cursor: pointer;
 }
-
 /*
 For NewMems
 */
@@ -68,7 +64,7 @@ For NewMems
     color: rgb(90,100,120);
 }
 .signUp {
-    color: #1C65F2;
+    color: rgb(30, 100, 240);
     text-decoration: none;
     cursor: pointer;
 }

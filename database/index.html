@@ -9,32 +9,25 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-  <section class="signIn">
+  <section class="SignIn">
     <h1 class="SIheader">Sign in to your account</h1>
-    <form action="#" class="SIForm">
+    <form class="SIForm">
       <div class="SISec">
         <label class="SIlabels" for="email">Your email</label><br>
-        <input class="TextForm" type="email" name="Email" id="email" required>
+        <input class="TextForm" type="email" name="Email" id="email" autocomplete="off" required>
       </div>
-
       <div class="SISec">
         <label class="SIlabels" for="pass">Password</label><br>
-        <input class="TextForm" type="password" name="Pass" id="pass" required>
+        <input class="TextForm" type="password" name="Pass" id="pass" autocomplete="off" required>
       </div>
-
       <div class="SISec">
         <input type="submit" class="signInButton" value="Sign In" id="signIn">
       </div>
-
       <div class="SUSec">
         Don't have an account yet? <a class="signUp" href="#">Sign up.</a>
       </div>
-
     </form>
   </section>
-
-
 
   <script src="./app.js"></script>
 </body>
