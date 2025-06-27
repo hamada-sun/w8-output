@@ -7,8 +7,8 @@ Base style
     box-sizing: border-box;
 }
 body {
-    color: rgb(255,232,255);
-    background-color: rgb(10,17,25);
+    color: rgb(255,230,255);
+    background-color: rgb(10,15,25);
 }
 
 /*
@@ -16,7 +16,7 @@ SignInForm
 */
 .signIn {
     line-height: 2.5em;
-    background-color:	rgb(32,41,58);
+    background-color:	rgb(30,40,60);
     height: 500px;
     width: 500px;
     margin: 50px auto;
@@ -46,16 +46,14 @@ SignInForm
     height: 40px;
     cursor: text;
 }
-/* .email {} */
-/* .pass {} */
-/* .buttonMar {
-    margin: 25px 0;
-} */
+.TextForm:focus {
+    background-color: whitesmoke;
+}
+
 .signInButton {
     font-size: 20px;
-    color: rgb(255,232,255);
+    color: rgb(255,230,255);
     border: solid 0;
-    border-color: #1C65F2;
     background-color: #1C65F2;
     border-radius: 8px;
     width: 400px;
@@ -67,10 +65,10 @@ SignInForm
 For NewMems
 */
 .SUSec {
-    color: rgb(92,101,118);
+    color: rgb(90,100,120);
 }
 .signUp {
-    color: #4280E2;
+    color: #1C65F2;
     text-decoration: none;
     cursor: pointer;
 }
